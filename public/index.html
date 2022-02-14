@@ -1,0 +1,20 @@
+<html>
+<head>
+  <title>歩行運動方程式サポートページ</title>
+  <script defer src="/__/firebase/4.9.1/firebase-app.js"></script>
+  <script defer src="/__/firebase/4.9.1/firebase-database.js"></script>
+  <script defer src="/__/firebase/init.js"></script>
+  <script src="./main.js"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="./main.css"></link> -->
+</head>
+
+<body>
+  <div id="reply-form">
+    <div class="l">名前（自由）:</div> <input type="text" id="reply-name">
+    <div class="l">内容（Latex等は使えません）:</div> <textarea id="reply-body"></textarea>
+    <div class="l">削除キー:</div> <input type="text" id="reply-key">
+    <div class="l"></div> <button id="reply-submit" onclick="postReply()">投稿</button>
+  </div>
+  <div id="replies"></div>
+</body>
+</html>
